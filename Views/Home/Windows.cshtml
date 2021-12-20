@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewData["Title"] = "Windows";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="~/css/style.css">
+    <!-- Bootstrap CSS -->
+
+
+    <title>Windows mobiles</title>
+
+</head>
+
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <button class="closebtn" onclick="closeNav()">&times;</button>
+        <button onclick="win7()">Windows 7.0</button>
+        <button onclick="win8()">Windows 8.0</button>
+    </div>
+
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Brands</span>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+        function win7() {
+            document.getElementById("demo").innerHTML = "<h1 style='text-align:center'>Windows 7.0</h1><div class='row'><div class='column'><div class='card'><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Samsung_Omnia_7.jpg/800px-Samsung_Omnia_7.jpg'alt='Samsung Omnia 7 ' style='width:80%'><h1>Samsung Omnia 7</h1><p class='price'>₹58,347.00</p><p>Samsung Omnia 7 (also known as Samsung I8700) with Windows Phone 7 Homescreen</p><p><button>View</button></p></div></div><div class='column'><div class='card'><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/LG_Optimus_7.png/320px-LG_Optimus_7.png'alt='lg optimus l7' style='width:55.75%'><h1>lg optimus l7</h1><p class='price'>₹9,800.00</p><p>White and black</p><p><button>View</button></p></div></div></div>"
+        }
+        function win8() {
+            document.getElementById("demo").innerHTML = "<h1 style='text-align:center'>Windows 8.0</h1><div class='row'><div class='column'><div class='card'><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Nokia_Lumia_520_Black.jpg/800px-Nokia_Lumia_520_Black.jpg'alt='A Nokia Lumia 520 ' style='width:80%'><h1>A Nokia Lumia 520</h1><p class='price'>₹3,850.00</p><p>A Nokia Lumia 520 Lumia Denim with Windows Phone 8.1</p><p><button>View</button></p></div></div><div class='column'><div class='card'><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Nokia_Lumia_625.jpg/800px-Nokia_Lumia_625.jpg'alt='Nokia Lumia 625' style='width:67.75%'><h1>Nokia Lumia 625</h1><p class='price'>₹4,999.00</p><p>White</p><p><button>View</button></p></div></div></div>"
+        }
+    </script>
+    <div id="demo">
+        <div style="display: flex; justify-content: center;">
+            <img alt="Welcome to Windows"
+                 src="https://www.pngkit.com/png/full/440-4400534_black-windows-logo-image-source-from-this-windows.png"
+                 style="width: 35%;">
+        </div>
+    </div>
+</body>
+
+</html>

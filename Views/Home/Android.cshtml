@@ -1,0 +1,61 @@
+﻿
+@{
+    ViewData["Title"] = "Android";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="~/css/style.css">
+    <!-- Bootstrap CSS -->
+
+
+    <title>Android mobiles</title>
+
+</head>
+
+<body>
+    <div class="container">
+    <div id="mySidenav" class="sidenav">
+        <button class="closebtn" onclick="closeNav()">&times;</button>
+        <button onclick="samsungfun()">Samsung</button>
+        <button onclick="redmefun()">Redme</button>
+        <button onclick="oppofun()">Oppo</button>
+    </div>
+
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Brands</span>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+        function samsungfun() {
+            document.getElementById("demo").innerHTML = "<h1 style='text-align:center'>Samsung mobiles</h1><div class='row'><div class='column'><div class='card'><img src='https://m.media-amazon.com/images/I/71b5BwTCcZL._SL1500_.jpg'alt='Galaxy M52' style='width:80%'><h1>Galaxy M52 5G</h1><p class='price'>₹30,000.00</p><p>(Blazing Black, 6GB RAM, 128GB Storage)</p><p><a href='/Home/Display'><button >View</button></a></p></div></div><div class='column'><div class='card'><img src='https://m.media-amazon.com/images/I/71MmJNwZcML._SL1500_.jpg'alt='Galaxy Z Fold3' style='width:100%'><h1>Galaxy Z Fold3 5G</h1><p class='price'>₹1,49,999.00</p><p>(Phantom Black, 12GB RAM, 256GB Storage)</p><p><a href='/Home/ProductDisplay'><button>View</button></a></p></div></div><div class='column'><div class='card'><img src='https://m.media-amazon.com/images/I/81+Zx6troaL._SL1500_.jpg'alt='Galaxy Note 20' style='width:100%'><h1>Galaxy Note 20</h1><p class='price'>₹44,999.00</p><p>(Mystic Green, 8GB RAM, 256GB Storage)</p><p><a href='/Home/GalaxyNote'><button>View</button></a></p></div></div><div class='column'><div class='card'><img src='https://m.media-amazon.com/images/I/91BGpV19r0L._SL1500_.jpg'alt='Samsung Galaxy S21' style='width:77.9%'><h1>Galaxy S21 5G</h1><p class='price'>₹64,990.00</p><p>(Phantom Gray, 8GB, 128GB Storage)</p><p><a href='/home/galaxys21'><button>View</button></a></p></div></div></div>";
+        }
+        function redmefun() {
+            document.getElementById("demo").innerHTML = "<h1 style='text-align:center'>Redmi mobiles</h1><div class='row'><div class='column'><div class='card'><img src='https://m.media-amazon.com/images/I/71q297sVv3L._SL1500_.jpg'alt='Redme 10' style='width:98.4%'><h1>Redmi 10 Prime</h1><p class='price'>₹12,499.00</p><p>(Astral White 4GB RAM 64GB ROM)</p><p><a href='/Home/Redmi10Prime'><button>View</button></a></p></div></div><div class='column'><div class='card'><img src='https://m.media-amazon.com/images/I/71A9Vo1BatL._SL1500_.jpg'alt='Redmi 9' style='width:98.4%'><h1>Redmi 9</h1><p class='price'>₹9,499.00.00</p><p> (Sporty Orange, 4GB RAM, 64GB Storage)</p><p><a href='/Home/Redmi9'><button>View</button></a></p></div></div><div class='column'><div class='card'><img src='https://m.media-amazon.com/images/I/81B0HJigO-L._SL1500_.jpg'alt='Redmi Note 10S' style='width:80%'><h1>Redmi Note 10S</h1><p class='price'>₹14,999.00</p><p>(Deep Sea Blue, 6GB RAM, 64GB Storage)</p><p><a href='/Home/RedmiNote10S'><button>View</button></a></p></div></div><div class='column'><div class='card'><img src='https://m.media-amazon.com/images/I/919IyPIfczL._SL1500_.jpg'alt='Redmi 9 Activ' style='width:98.5%'><h1>Redmi 9 Activ</h1><p class='price'>₹10,999.00</p><p>(Metallic Purple, 6GB RAM, 128GB Storage)</p><p><a href='/home/Redmi9Activ'><button>View</button></a></p></div></div></div>"
+        }
+        function oppofun() {
+            document.getElementById("demo").innerHTML = "<h1 style='text-align:center'>Oppo mobiles</h1><div class='row'><div class='column'><div class='card'><img src='https://m.media-amazon.com/images/I/71KCwNV6MuL._SL1500_.jpg'alt='OPPO A31 ' style='width:100%'><h1>A31 G</h1><p class='price'>₹12,990.00</p><p>(Mystery Black, 6GB RAM, 128GB Storage)</p><p><a href='/Home/A31'><button>View</button></a></p></div></div><div class='column'><div class='card'><img src='https://m.media-amazon.com/images/I/71geVdy6-OS._SL1500_.jpg'alt='OPPO A74 5G' style='width:100%'><h1>A74 5G</h1><p class='price'>₹17,990.00</p><p>(Fantastic Purple,6GB RAM,128GB Storage)</p><p><a href='/Home/A74'><button>View</button></a></p></div></div><div class='column'><div class='card'><img src='https://m.media-amazon.com/images/I/71pHC9Lbc-S._SL1500_.jpg'alt='OPPO F19 Pro' style='width:100%'><h1>F19 Pro</h1><p class='price'>₹21,990.00</p><p>(Fantastic Purple, 8GB RAM, 128GB Storage)</p><p><a href='/Home/F19'><button>View</button></a></p></div></div><div class='column'><div class='card'><img src='https://m.media-amazon.com/images/I/61ux0RhoNiL._SL1500_.jpg'alt='Oppo A16' style='width:100%'><h1>A16</h1><p class='price'>₹13,490.00</p><p>(Crystal Black, 4GB RAM, 64GB Storage)</p><p><a href='/Home/A16'><button>View</button></a></p></div></div></div>"
+        }
+    </script>
+    <div id="demo">
+        <div style="display: flex; justify-content: center;">
+            <img alt="Welcome to Android" src="https://freepngimg.com/thumb/android/31133-3-android-image-thumb.png"
+                 style="width: 40%;">
+        </div>
+    </div>
+        </div>
+</body>
+
+</html>

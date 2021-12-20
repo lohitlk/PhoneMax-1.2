@@ -1,0 +1,74 @@
+﻿@model PhoneMax_1._1.Models.Product
+@{
+    ViewData["Title"] = "Cart";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhoneMax - Cart</title>
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="~/css/Cart.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5 p-3 rounded cart">
+        <div class="row no-gutters">
+            <div class="col-md-12 col-md-6">
+                <div class="product-details mr-2">
+                    <div class="d-flex flex-row align-items-center"><i class="fa fa-arrow-left"> </i></div>
+                </div><span class="ml-2">Continue Shopping</span>
+            </div>
+            <hr>
+            <h6 class="mb-0">Shopping cart</h6><br />
+            <div class="d-flex justify-content-between">
+                <span>You have 2 items in your cart</span>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mt-3 p-2 items rounded">
+                <div class="d-flex flex-row">
+                    <img class="rounded" src="https://rukminim1.flixcart.com/image/416/416/ktketu80/mobile/6/v/c/iphone-13-pro-max-mllh3hn-a-apple-original-imag6vpgpycue85h.jpeg?q=70" width="40" height="200">
+                    <div class="ml-2" style="margin-left: 20px;"><span class="font-weight-bold d-block">Iphone 11 pro</span><span class="spec">256GB, Gold</span></div>
+                </div>
+                <div class="d-flex flex-row align-items-center"><span class="d-block ml-5 font-weight-bold" style="padding-right: 20px;">RS.1,79,900</span><i class="fa fa-trash-o ml-3 text-black-50"></i></div>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center mt-3 p-2 items rounded">
+                <div class="d-flex flex-row">
+                    <img class="rounded" src="https://rukminim1.flixcart.com/image/416/416/ksgehzk0/mobile/j/9/r/galaxy-a03s-sm-a037fzwgins-sm-a037fzw6ins-samsung-original-imag6ygqbmhzgevh.jpeg?q=70" width="40" height="200">
+                    <div class="ml-2" style="margin-left: 20px;"><span class="font-weight-bold d-block">Samsung galaxy Note&nbsp;</span><span class="spec">256GB, Navy Blue</span></div>
+                </div>
+                <div class="d-flex flex-row align-items-center"><span class="d-block ml-5 font-weight-bold" style="padding-right: 20px;">RS.12,014</span><i class="fa fa-trash-o ml-3 text-black-50"></i></div>
+            </div>
+
+
+
+
+
+            @foreach (var product in ViewBag.products)
+            {
+                <div class="d-flex justify-content-between align-items-center mt-3 p-2 items rounded">
+                    <div class="d-flex flex-row">
+                        <img class="rounded" src="https://m.media-amazon.com/images/I/71MmJNwZcML._SL1500_.jpg" width="40" height="200">
+                        <div class="ml-2" style="margin-left: 20px;"><span class="font-weight-bold d-block">@product.Name</span></div>
+                    </div>
+                    <div class="d-flex flex-row align-items-center"><span class="d-block ml-5 font-weight-bold" style="padding-right: 20px;">@product.Price</span><i class="fa fa-trash-o ml-3 text-black-50"></i></div>
+                </div>
+            }
+
+
+            </div>
+        <hr class="line">
+        <div class="d-flex justify-content-between information"><span>Subtotal</span><span>RS.1,91,914.00</span></div>
+        <div class="d-flex justify-content-between information"><span>Shipping</span><span>RS.20.00</span></div>
+        <div class="d-flex justify-content-between information"><span>Total(Incl. taxes)</span><span>RS.1,91,934</span></div><button class="btn btn-primary btn-block d-flex justify-content-between mt-3" type="button"><span>RS.1,91,934</span><span>Checkout<i class="fa fa-arrow-right ml-1"></i></span></button>
+    </div>
+</body>
+</html>

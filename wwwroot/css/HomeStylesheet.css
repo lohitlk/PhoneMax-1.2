@@ -1,0 +1,51 @@
+﻿.team-boxed {
+    color: #313437;
+    background-color: #eef4f7;
+}
+
+    .team-boxed p {
+        color: #7d8285;
+    }
+
+
+
+
+
+    .team-boxed  p {
+        margin-bottom: 0;
+    }
+
+
+
+
+
+    .team-boxed .box {
+        text-align: center;
+        padding: 30px;
+        /*background-color: #fff;*/
+        margin-bottom: 30px;
+    }
+
+    .team-boxed .name {
+        font-weight: bold;
+        margin-top: 28px;
+        margin-bottom: 8px;
+       /* color: inherit;*/
+    }
+
+
+
+    .team-boxed  .description {
+        font-size: 15px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    .team-boxed img {
+        max-width: 160px;
+    }
+
+    .team-boxed .rowpeople {
+        align-items: self-end;
+        mix-blend-mode: difference;
+    }

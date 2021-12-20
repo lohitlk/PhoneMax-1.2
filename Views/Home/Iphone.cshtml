@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewData["Title"] = "Iphone";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="~/css/style.css">
+    <!-- Bootstrap CSS -->
+
+
+    <title>Apple mobiles</title>
+
+</head>
+
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <button class="closebtn" onclick="closeNav()">&times;</button>
+        <button onclick="iphone()">iPhone</button>
+        <button onclick="pro()">iPhone Pro</button>
+    </div>
+
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Brands</span>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+        function iphone() {
+            document.getElementById("demo").innerHTML = "<h1 style='text-align:center'>iPhone mobiles</h1><div class='row'><div class='column'><div class='card'><img src='https://m.media-amazon.com/images/I/71wFEBh9pPL._SL1500_.jpg'alt='iphone 6' style='width:52.9%'><h1>iPhone 6</h1><p class='price'>₹15,990.00</p><p>(Gold, 1GB RAM, 32GB Storage)</p><p><a href='/Home/Iphone6'><button>View</button></a></p></div></div><div class='column'><div class='card'><img src='https://www.theiphonewiki.com/w/images/a/ab/IPhone_7.png'alt='iphone 7' style='width:49.3%'><h1>iPhone 7</h1><p class='price'>₹25,999.00</p><p>(RAM 2 GB Storage 256 GB)</p><p><a href='/Home/Iphone7'><button>View</button></a></p></div></div><div class='column'><div class='card'><img src='https://vlebazaar.in/image/cache/catalog//-Apple-iPhone-8-Space-Grey-64-GB-p/-Apple-iPhone-8-Space-Grey-64-GB-p-1000x1000h.jpg'alt='iphone 8' style='width:100%'><h1>iPhone 8</h1><p class='price'>₹36,990.00</p><p>(SPACE GREY, 64 GB) </p><p><a href='/Home/Iphone8'><button>View</button></a></p></div></div><div class='column'><div class='card'><img src='https://vlebazaar.in/image/cache/catalog/apple%204s/i5i-1000x1000h.jpeg'alt='iphone 5' style='width:100%'><h1>iPhone 5</h1><p class='price'>₹7,490.00</p><p>(WHITE, 16 GB)</p><p><a href='/home/Iphone5'><button>View</button></a></p></div></div></div>";
+        }
+        function pro() {
+            document.getElementById("demo").innerHTML = "<h1 style='text-align:center'>Iphone pro version</h1><div class='row'><div class='column'><div class='card'><img src='https://m.media-amazon.com/images/I/61i8Vjb17SL._SL1500_.jpg'alt='Apple iPhone 13 Pro Max ' style='width:100%'><h1>Apple iPhone 13 Pro Max</h1><p class='price'>₹1,39,900.00</p><p>Sierra Blue</p><p><a href='/Home/Iphone13ProMax'><button>View</button></a></p></div></div><div class='column'><div class='card'><img src='https://m.media-amazon.com/images/I/71YlH-4MUQL._SL1500_.jpg'alt='New Apple iPhone 12 Pro (128GB)' style='width:100%'><h1>New Apple iPhone 12 Pro (128GB)</h1><p class='price'>₹95,900.00</p><p>Graphite</p><p><a href='/Home/Iphone12Pro'><button>View</button></a></p></div></div><div class='column'><div class='card'><img src='https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRSS6o0kodo-N1cP77bo6gt0-J4fm-19hDgqsf4jIKWPNSMRCsosZo70YPahfW925dLCS7L6pVlpW8FQSoyq8Kqxg4uTJWK'alt='Apple iPhone 11 Pro' style='width:100%'><h1>Apple iPhone 11 Pro</h1><p class='price'>₹89,899.00</p><p>Matte Space </p><p><a href='/Home/Iphone11Pro'><button>View</button></a></p></div></div><div class='column'><div class='card'><img src='https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQE6St1qESzpFXUWWRn8zHeOKzNRt3dGvj26oMiQ2kt8amonNd5'alt='Apple iPhone 11 Pro Max' style='width:100%'><h1>Apple iPhone 11 Pro Max</h1><p class='price'>₹49,152.00</p><p>Matte Space Gray</p><p><a href='/home/Iphone11ProMax'><button>View</button></a></p></div></div></div>"
+        }
+    </script>
+    <div id="demo">
+        <div style="display: flex; justify-content: center;">
+            <img alt="Welcome to Apple"
+                 src="https://media.idownloadblog.com/wp-content/uploads/2018/07/Apple-logo-black-and-white.png"
+                 style="width: 35%;">
+        </div>
+    </div>
+</body>
+
+</html>
